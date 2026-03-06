@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Dr. Devendra Singh Dandotiya | Associate Professor (Research) | Presidency University</title>
+<meta name="description" content="Academic portfolio of Dr. Devendra Singh Dandotiya – Battery Thermal Management, PCM, Nanofluids, ML | Presidency University Bangalore"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════
+   DESIGN: Editorial-scholarly. Deep navy canvas,
+   warm gold accents, generous negative space,
+   scientific precision meets humanist warmth.
+══════════════════════════════════════════════ */
+:root{
+  --ink: #0d1b2e;
+  --ink2: #1b2d45;
+  --blue: #1762b3;
+  --blue2: #2176d4;
+  --gold: #c89b2a;
+  --gold2: #e8b83a;
+  --teal: #1a8a7b;
+  --muted: #6b7a90;
+  --pale: #f0f4fa;
+  --card: #ffffff;
+  --border: #dde5f0;
+  --text: #2d3748;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--pale);color:var(--text);line-height:1.7;overflow-x:hidden}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--ink)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* ══ HERO ══════════════════════════════════ */
+.hero{
+  position:relative;
+  background:var(--ink);
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+}
+
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(23,98,179,0.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(23,98,179,0.06) 1px,transparent 1px);
+  background-size:60px 60px;
+}
+
+.hero-orb{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(90px);
+  pointer-events:none;
+}
+.hero-orb1{width:700px;height:700px;background:radial-gradient(circle,rgba(23,98,179,0.22),transparent 70%);top:-200px;left:-200px}
+.hero-orb2{width:500px;height:500px;background:radial-gradient(circle,rgba(200,155,42,0.15),transparent 70%);bottom:-100px;right:-100px}
+.hero-orb3{width:300px;height:300px;background:radial-gradient(circle,rgba(26,138,123,0.12),transparent 70%);top:40%;left:55%}
+
+/* floating particles */
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.p{position:absolute;background:var(--gold);border-radius:50%;animation:float linear infinite;opacity:0.25}
+@keyframes float{0%{transform:translateY(100vh) rotate(0)}100%{transform:translateY(-20px) rotate(720deg)}}
+
+.hero-nav{
+  position:relative;z-index:10;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.6rem 3rem;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+
+.logo{
+  font-family:'DM Serif Display',serif;
+  color:var(--gold);font-size:1.1rem;letter-spacing:0.5px;
+}
+
+.nav-links{display:flex;gap:0.2rem;flex-wrap:wrap}
+.nav-links a{
+  color:rgba(255,255,255,0.6);text-decoration:none;
+  font-size:0.8rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;
+  padding:0.4rem 0.9rem;border-radius:4px;
+  transition:all 0.2s;
+}
+.nav-links a:hover{color:var(--gold);background:rgba(200,155,42,0.1)}
+
+.hero-content{
+  position:relative;z-index:5;
+  flex:1;display:grid;
+  grid-template-columns:1fr 380px;
+  gap:4rem;align-items:center;
+  padding:4rem 3rem 3rem;
+  max-width:1300px;margin:0 auto;width:100%;
+}
+
+.hero-left{}
+
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:0.6rem;
+  background:rgba(200,155,42,0.12);border:1px solid rgba(200,155,42,0.3);
+  border-radius:30px;padding:0.4rem 1rem;
+  font-size:0.75rem;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;
+  margin-bottom:1.5rem;
+  animation:fadeUp 0.6s ease both;
+}
+.hero-eyebrow::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
+
+h1.hero-name{
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(2.6rem,5vw,4.2rem);
+  line-height:1.1;
+  color:#fff;
+  letter-spacing:-1px;
+  margin-bottom:0.6rem;
+  animation:fadeUp 0.6s ease 0.1s both;
+}
+h1.hero-name em{color:var(--gold);font-style:normal}
+
+.hero-title{
+  font-size:1.05rem;color:rgba(255,255,255,0.65);
+  margin-bottom:1.2rem;
+  animation:fadeUp 0.6s ease 0.2s both;
+}
+
+.hero-location{
+  display:flex;align-items:center;gap:0.5rem;
+  font-size:0.9rem;color:rgba(255,255,255,0.45);margin-bottom:2rem;
+  animation:fadeUp 0.6s ease 0.25s both;
+}
+
+.hero-summary{
+  max-width:560px;
+  font-size:1rem;line-height:1.75;
+  color:rgba(255,255,255,0.72);
+  border-left:3px solid var(--gold);
+  padding-left:1.2rem;
+  margin-bottom:2.5rem;
+  animation:fadeUp 0.6s ease 0.3s both;
+}
+
+.hero-cta{
+  display:flex;gap:1rem;flex-wrap:wrap;
+  animation:fadeUp 0.6s ease 0.35s both;
+}
+
+.btn{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  padding:0.75rem 1.6rem;border-radius:8px;
+  font-size:0.88rem;font-weight:700;letter-spacing:0.5px;
+  text-decoration:none;transition:all 0.22s;cursor:pointer;border:none;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--ink);box-shadow:0 4px 20px rgba(200,155,42,0.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,155,42,0.5)}
+.btn-outline{background:transparent;color:rgba(255,255,255,0.75);border:1px solid rgba(255,255,255,0.2)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);background:rgba(200,155,42,0.08)}
+
+/* STATS RIBBON */
+.hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;
+  animation:fadeUp 0.6s ease 0.45s both;
+}
+
+.stat-box{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;padding:1.1rem;text-align:center;
+  transition:all 0.25s;backdrop-filter:blur(4px);
+}
+.stat-box:hover{background:rgba(255,255,255,0.08);border-color:rgba(200,155,42,0.3);transform:translateY(-3px)}
+.stat-num{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--gold);line-height:1}
+.stat-lbl{font-size:0.7rem;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.8px;margin-top:0.3rem}
+
+/* PROFILE CARD */
+.hero-right{animation:fadeUp 0.6s ease 0.4s both}
+
+.profile-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:20px;padding:2rem;
+  backdrop-filter:blur(10px);
+}
+
+.avatar-wrap{
+  width:120px;height:120px;margin:0 auto 1.5rem;
+  background:linear-gradient(135deg,var(--gold),var(--blue));
+  border-radius:50%;padding:3px;
+}
+.avatar-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid var(--ink)}
+.avatar-initials{
+  width:100%;height:100%;border-radius:50%;
+  background:var(--ink2);border:3px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'DM Serif Display',serif;font-size:2rem;color:var(--gold);
+}
+
+.profile-links-grid{display:flex;flex-direction:column;gap:0.6rem}
+.profile-link-item{
+  display:flex;align-items:center;gap:0.75rem;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:8px;padding:0.6rem 0.9rem;
+  text-decoration:none;transition:all 0.2s;
+}
+.profile-link-item:hover{background:rgba(200,155,42,0.1);border-color:rgba(200,155,42,0.3)}
+.pli-icon{
+  width:28px;height:28px;border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.65rem;font-weight:800;color:#fff;flex-shrink:0;
+}
+.pli-text{flex:1}
+.pli-name{font-size:0.78rem;font-weight:700;color:#fff}
+.pli-id{font-size:0.65rem;color:rgba(255,255,255,0.4)}
+
+.hero-scroll{
+  position:relative;z-index:5;
+  text-align:center;padding:1.5rem;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+.scroll-hint{
+  display:inline-flex;flex-direction:column;align-items:center;gap:0.4rem;
+  color:rgba(255,255,255,0.3);font-size:0.72rem;letter-spacing:1px;text-transform:uppercase;
+  animation:bounce 2s ease infinite;
+}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.scroll-hint svg{width:16px;height:16px;stroke:currentColor;fill:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+/* ══ MAIN LAYOUT ═══════════════════════════ */
+main{max-width:1300px;margin:0 auto;padding:4rem 2rem}
+
+section{margin-bottom:5rem}
+
+.section-header{
+  display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem;
+}
+.section-label{
+  font-size:0.7rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold);
+}
+.section-title{
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(1.7rem,3vw,2.2rem);
+  color:var(--ink);line-height:1.2;
+}
+.section-line{flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+
+/* ── CARDS ── */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:0 2px 20px rgba(13,27,46,0.06);
+  overflow:hidden;
+  transition:box-shadow 0.25s;
+}
+.card:hover{box-shadow:0 8px 40px rgba(13,27,46,0.12)}
+.card-pad{padding:1.8rem}
+
+/* ── EXPERIENCE TIMELINE ── */
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{
+  content:'';position:absolute;left:6px;top:0;bottom:0;
+  width:2px;background:linear-gradient(to bottom,var(--gold),var(--blue),var(--teal));
+  border-radius:2px;
+}
+.tl-item{position:relative;margin-bottom:2rem}
+.tl-item:last-child{margin-bottom:0}
+.tl-dot{
+  position:absolute;left:-2rem;top:4px;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--gold);border:3px solid var(--pale);
+  box-shadow:0 0 0 2px var(--gold);
+  z-index:1;
+}
+.tl-dot.blue{background:var(--blue);box-shadow:0 0 0 2px var(--blue)}
+.tl-dot.teal{background:var(--teal);box-shadow:0 0 0 2px var(--teal)}
+.tl-period{font-size:0.72rem;font-weight:700;color:var(--blue);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:0.2rem}
+.tl-role{font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--ink);margin-bottom:0.1rem}
+.tl-org{font-size:0.9rem;color:var(--muted)}
+
+/* ── PUBLICATIONS ── */
+.pub-year-group{margin-bottom:1.5rem}
+.pub-year-badge{
+  display:inline-block;
+  background:var(--ink);color:var(--gold);
+  font-family:'DM Serif Display',serif;font-size:1rem;
+  padding:0.2rem 0.9rem;border-radius:6px;margin-bottom:1rem;
+}
+.pub-item{
+  border-left:3px solid var(--border);
+  padding:0.85rem 1rem;margin-bottom:0.6rem;
+  border-radius:0 8px 8px 0;background:#fafbfe;
+  transition:border-color 0.2s,background 0.2s;
+  cursor:default;
+}
+.pub-item:hover{border-color:var(--blue);background:#f0f5ff}
+.pub-title{font-size:0.9rem;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:0.3rem}
+.pub-meta{font-size:0.78rem;color:var(--muted)}
+.pub-tags{display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.4rem}
+.qtag{
+  font-size:0.66rem;font-weight:800;letter-spacing:0.5px;
+  padding:0.15rem 0.55rem;border-radius:20px;
+}
+.qtag.q1{background:#dcfce7;color:#15803d}
+.qtag.q2{background:#dbeafe;color:#1d4ed8}
+.qtag.q3{background:#fef3c7;color:#b45309}
+.qtag.q4{background:#f3f4f6;color:#6b7280}
+.qtag.pick{background:#fde68a;color:#92400e}
+.qtag.scie{background:#ede9fe;color:#7c3aed}
+.qtag.scopus{background:#ffedd5;color:#c2410c}
+.qtag.esci{background:#cffafe;color:#0e7490}
+
+/* Pub filter */
+.pub-filter{display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.pfbtn{
+  padding:0.4rem 1rem;border-radius:20px;font-size:0.78rem;font-weight:700;
+  border:1px solid var(--border);background:#fff;color:var(--muted);cursor:pointer;
+  transition:all 0.2s;
+}
+.pfbtn.active,.pfbtn:hover{background:var(--ink);color:var(--gold);border-color:var(--ink)}
+
+/* ── PROJECTS ── */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.2rem}
+.proj-card{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:1.5rem;transition:all 0.25s;position:relative;overflow:hidden;
+}
+.proj-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--gold),var(--blue));
+}
+.proj-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(13,27,46,0.12)}
+.proj-amount{
+  font-family:'DM Serif Display',serif;font-size:2rem;color:var(--gold);
+  margin-bottom:0.4rem;
+}
+.proj-title{font-size:0.95rem;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:0.6rem}
+.proj-agency{font-size:0.8rem;color:var(--muted);margin-bottom:0.8rem}
+.proj-meta{display:flex;align-items:center;justify-content:space-between}
+.proj-period{font-size:0.75rem;color:var(--muted)}
+.proj-badge{
+  font-size:0.7rem;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;
+  padding:0.2rem 0.6rem;border-radius:20px;
+}
+.proj-badge.ongoing{background:#dcfce7;color:#15803d}
+.proj-badge.done{background:#f3f4f6;color:#6b7280}
+
+/* ── METRICS ── */
+.metrics-strip{
+  display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;
+  padding:2rem;background:var(--ink);border-radius:18px;
+  margin-bottom:2.5rem;
+}
+.metric-item{text-align:center}
+.metric-num{font-family:'DM Serif Display',serif;font-size:2.2rem;color:var(--gold);line-height:1}
+.metric-lbl{font-size:0.68rem;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.8px;margin-top:0.4rem}
+
+/* ── PROFILE CARDS GRID ── */
+.profiles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.profile-card-item{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:1.2rem 1.4rem;display:flex;align-items:center;gap:1rem;
+  text-decoration:none;transition:all 0.22s;
+}
+.profile-card-item:hover{border-color:var(--blue);box-shadow:0 4px 20px rgba(23,98,179,0.12);transform:translateX(4px)}
+.pci-icon{
+  width:44px;height:44px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.75rem;font-weight:800;color:#fff;flex-shrink:0;
+}
+.pci-name{font-size:0.9rem;font-weight:700;color:var(--ink)}
+.pci-id{font-size:0.72rem;color:var(--muted);margin-top:0.1rem}
+.pci-meta{font-size:0.7rem;color:var(--blue);font-weight:600;margin-top:0.2rem}
+
+/* ── SUPERVISION ── */
+.sup-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+.sup-card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:1.3rem;transition:all 0.2s;
+}
+.sup-card:hover{border-color:var(--teal);transform:translateY(-2px)}
+.sup-name{font-weight:700;color:var(--ink);font-size:0.92rem;margin-bottom:0.2rem}
+.sup-period{font-size:0.75rem;color:var(--blue);font-weight:600}
+.sup-title{font-size:0.8rem;color:var(--muted);margin-top:0.4rem;line-height:1.4}
+.sup-status{
+  display:inline-block;margin-top:0.5rem;
+  font-size:0.68rem;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;
+  padding:0.15rem 0.6rem;border-radius:20px;
+}
+.sup-status.done{background:#dcfce7;color:#15803d}
+.sup-status.ongoing{background:#dbeafe;color:#1d4ed8}
+
+/* ── AWARDS ── */
+.awards-list{display:flex;flex-direction:column;gap:0.8rem}
+.award-item{
+  display:flex;gap:1rem;align-items:flex-start;
+  background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem 1.2rem;
+  transition:all 0.2s;
+}
+.award-item:hover{border-color:var(--gold);background:#fffbf0}
+.award-icon{font-size:1.4rem;flex-shrink:0;margin-top:0.1rem}
+.award-text{font-size:0.88rem;color:var(--text);line-height:1.5}
+
+/* ── PATENTS ── */
+.patents-list{display:flex;flex-direction:column;gap:0.9rem}
+.patent-card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:1.2rem 1.4rem;display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:start;
+  transition:all 0.2s;
+}
+.patent-card:hover{border-color:var(--gold);box-shadow:0 4px 20px rgba(200,155,42,0.1)}
+.patent-num{
+  font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--gold);
+  line-height:1;opacity:0.3;
+}
+.patent-title{font-weight:700;color:var(--ink);font-size:0.92rem;margin-bottom:0.3rem}
+.patent-meta{font-size:0.78rem;color:var(--muted)}
+.patent-badge{
+  font-size:0.7rem;font-weight:800;padding:0.25rem 0.7rem;border-radius:6px;white-space:nowrap;
+}
+.patent-badge.granted{background:#dcfce7;color:#15803d}
+.patent-badge.published{background:#dbeafe;color:#1d4ed8}
+
+/* ── REVIEWER ── */
+.reviewer-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.8rem}
+.rev-card{
+  background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;
+}
+.rev-pub{font-weight:700;color:var(--ink);font-size:0.85rem;margin-bottom:0.4rem}
+.rev-journals{font-size:0.75rem;color:var(--muted);line-height:1.5}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.contact-item{
+  display:flex;align-items:center;gap:1rem;
+  background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem;
+}
+.ci-icon{
+  width:44px;height:44px;background:var(--ink);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;
+}
+.ci-lbl{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.8px;color:var(--muted);margin-bottom:0.2rem}
+.ci-val{font-size:0.9rem;font-weight:600;color:var(--ink)}
+.ci-val a{color:var(--blue);text-decoration:none}
+.ci-val a:hover{text-decoration:underline}
+
+/* ── BACK TO TOP ── */
+#btt{
+  position:fixed;bottom:2rem;right:2rem;
+  width:44px;height:44px;background:var(--ink);border:1px solid rgba(255,255,255,0.1);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;z-index:999;
+  transition:all 0.25s;opacity:0;pointer-events:none;
+  color:var(--gold);font-size:1.2rem;
+  box-shadow:0 4px 20px rgba(0,0,0,0.3);
+}
+#btt.visible{opacity:1;pointer-events:all}
+#btt:hover{transform:translateY(-3px);background:var(--gold);color:var(--ink)}
+
+/* ── TABS ── */
+.tab-bar{display:flex;gap:0.3rem;border-bottom:2px solid var(--border);margin-bottom:1.5rem}
+.tab{
+  padding:0.6rem 1.2rem;font-size:0.82rem;font-weight:700;cursor:pointer;
+  border-bottom:2px solid transparent;margin-bottom:-2px;color:var(--muted);
+  transition:all 0.2s;border-radius:6px 6px 0 0;
+}
+.tab.active,.tab:hover{color:var(--blue);border-bottom-color:var(--blue)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--ink);color:rgba(255,255,255,0.5);
+  text-align:center;padding:3rem 2rem;
+  font-size:0.82rem;
+}
+footer strong{color:var(--gold)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1000px){
+  .hero-content{grid-template-columns:1fr;gap:2.5rem;padding:2.5rem 2rem 2rem}
+  .hero-right{order:-1}
+  .metrics-strip{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  .hero-nav{padding:1.2rem 1.5rem}
+  .nav-links{display:none}
+  .contact-grid{grid-template-columns:1fr}
+  .metrics-strip{grid-template-columns:repeat(2,1fr);padding:1.2rem}
+  .patent-card{grid-template-columns:1fr;gap:0.5rem}
+  .patent-num{font-size:1.2rem}
+  main{padding:2.5rem 1.2rem}
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ── MOBILE NAV HAMBURGER ── */
+.mob-menu-btn{
+  display:none;background:transparent;border:1px solid rgba(255,255,255,0.2);
+  color:rgba(255,255,255,0.7);padding:0.4rem 0.8rem;border-radius:6px;cursor:pointer;
+  font-size:1.2rem;
+}
+@media(max-width:768px){
+  .mob-menu-btn{display:block}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ HERO ══════════════════════════════════════════════ -->
+<div class="hero" id="top">
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb1"></div>
+  <div class="hero-orb hero-orb2"></div>
+  <div class="hero-orb hero-orb3"></div>
+  <div class="particles" id="particles"></div>
+
+  <nav class="hero-nav">
+    <div class="logo">DSD · Ph.D.</div>
+    <div class="nav-links">
+      <a href="#profiles">Profiles</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#supervision">Supervision</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="mob-menu-btn" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">☰</button>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span></span> Associate Professor (Research) · Presidency University
+      </div>
+      <h1 class="hero-name">Dr. Devendra<br><em>Singh Dandotiya</em></h1>
+      <p class="hero-title">Ph.D. Mechanical Engineering · IIT Guwahati · Shiv Nadar University</p>
+      <div class="hero-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Presidency University, Bengaluru, Karnataka – 560064, India
+      </div>
+
+      <p class="hero-summary">
+        15+ years of research and teaching in Mechanical Engineering, specialising in Battery Thermal Management Systems, Phase Change Materials, CO₂ nanofluids, and Machine Learning for thermal predictions. Secured ₹24.8 Lakhs as PI (SERB-DST), authored 21+ SCIE/Scopus journals, holds 3 granted patents, and guided 3 PhDs to completion.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#publications" class="btn btn-gold">📄 View Publications</a>
+        <a href="#contact" class="btn btn-outline">✉ Contact Me</a>
+        <a href="https://scholar.google.com/citations?user=N3PKfr4AAAAJ" target="_blank" class="btn btn-outline">📊 Google Scholar</a>
+      </div>
+
+      <br>
+      <div class="hero-stats">
+        <div class="stat-box"><div class="stat-num">11</div><div class="stat-lbl">h-Index</div></div>
+        <div class="stat-box"><div class="stat-num">428+</div><div class="stat-lbl">Citations</div></div>
+        <div class="stat-box"><div class="stat-num">21+</div><div class="stat-lbl">SCIE Journals</div></div>
+        <div class="stat-box"><div class="stat-num">3</div><div class="stat-lbl">Patents Granted</div></div>
+        <div class="stat-box"><div class="stat-num">₹24.8L</div><div class="stat-lbl">PI Funding</div></div>
+        <div class="stat-box"><div class="stat-num">15+</div><div class="stat-lbl">Years Exp.</div></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-card">
+        <div class="avatar-wrap">
+          <div class="avatar-initials">DSD</div>
+        </div>
+        <div style="text-align:center;margin-bottom:1.5rem">
+          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:#fff">Dr. Devendra S. Dandotiya</div>
+          <div style="font-size:0.78rem;color:rgba(255,255,255,0.45);margin-top:0.3rem">Mechanical Engineering · BTMS · PCM · ML</div>
+        </div>
+        <div class="profile-links-grid">
+          <a href="https://scholar.google.com/citations?user=N3PKfr4AAAAJ" target="_blank" class="profile-link-item">
+            <div class="pli-icon" style="background:#4285f4">GS</div>
+            <div class="pli-text">
+              <div class="pli-name">Google Scholar</div>
+              <div class="pli-id">h-11 · 428+ Citations · N3PKfr4AAAAJ</div>
+            </div>
+          </a>
+          <a href="https://orcid.org/0000-0002-6917-6165" target="_blank" class="profile-link-item">
+            <div class="pli-icon" style="background:#a6ce39">iD</div>
+            <div class="pli-text">
+              <div class="pli-name">ORCID</div>
+              <div class="pli-id">0000-0002-6917-6165</div>
+            </div>
+          </a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57195904646" target="_blank" class="profile-link-item">
+            <div class="pli-icon" style="background:#e9711c">Sc</div>
+            <div class="pli-text">
+              <div class="pli-name">Scopus</div>
+              <div class="pli-id">Author ID: 57195904646</div>
+            </div>
+          </a>
+          <a href="https://www.webofscience.com/wos/author/rid/G-2729-2018" target="_blank" class="profile-link-item">
+            <div class="pli-icon" style="background:#5e35b1">WS</div>
+            <div class="pli-text">
+              <div class="pli-name">Web of Science (WoS)</div>
+              <div class="pli-id">ResearcherID: G-2729-2018</div>
+            </div>
+          </a>
+          <a href="https://www.researchgate.net/profile/Devendra-Dandotiya" target="_blank" class="profile-link-item">
+            <div class="pli-icon" style="background:#00d2d3">RG</div>
+            <div class="pli-text">
+              <div class="pli-name">ResearchGate</div>
+              <div class="pli-id">Devendra-Dandotiya</div>
+            </div>
+          </a>
+          <a href="https://in.linkedin.com/in/drdevendradandotiya" target="_blank" class="profile-link-item">
+            <div class="pli-icon" style="background:#0077b5">in</div>
+            <div class="pli-text">
+              <div class="pli-name">LinkedIn</div>
+              <div class="pli-id">drdevendradandotiya</div>
+            </div>
+          </a>
+          <a href="https://vidwan.inflibnet.ac.in/profile/208780" target="_blank" class="profile-link-item">
+            <div class="pli-icon" style="background:#2e7d32">VI</div>
+            <div class="pli-text">
+              <div class="pli-name">Vidwan (INFLIBNET)</div>
+              <div class="pli-id">Profile ID: 208780</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-hint">
+      Scroll to explore
+      <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MAIN CONTENT ════════════════════════════════════════ -->
+<main>
+
+  <!-- ── ACADEMIC PROFILES ────────────────────────────── -->
+  <section id="profiles" class="reveal">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Academic Identity</div>
+        <h2 class="section-title">Research Profiles & IDs</h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+    <div class="profiles-grid">
+      <a href="https://scholar.google.com/citations?user=N3PKfr4AAAAJ" target="_blank" class="profile-card-item">
+        <div class="pci-icon" style="background:#4285f4">GS</div>
+        <div>
+          <div class="pci-name">Google Scholar</div>
+          <div class="pci-id">ID: N3PKfr4AAAAJ</div>
+          <div class="pci-meta">h-index: 11 · 428+ Citations</div>
+        </div>
+      </a>
+      <a href="https://orcid.org/0000-0002-6917-6165" target="_blank" class="profile-card-item">
+        <div class="pci-icon" style="background:#a6ce39">iD</div>
+        <div>
+          <div class="pci-name">ORCID</div>
+          <div class="pci-id">0000-0002-6917-6165</div>
+          <div class="pci-meta">Open Researcher & Contributor ID</div>
+        </div>
+      </a>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=57195904646" target="_blank" class="profile-card-item">
+        <div class="pci-icon" style="background:#e9711c">Sc</div>
+        <div>
+          <div class="pci-name">Scopus (Elsevier)</div>
+          <div class="pci-id">Author ID: 57195904646</div>
+          <div class="pci-meta">Scopus-indexed publications</div>
+        </div>
+      </a>
+      <a href="https://www.webofscience.com/wos/author/rid/G-2729-2018" target="_blank" class="profile-card-item">
+        <div class="pci-icon" style="background:#5e35b1">WS</div>
+        <div>
+          <div class="pci-name">Web of Science / ResearcherID</div>
+          <div class="pci-id">G-2729-2018</div>
+          <div class="pci-meta">Clarivate Web of Science</div>
+        </div>
+      </a>
+      <a href="https://www.researchgate.net/profile/Devendra-Dandotiya" target="_blank" class="profile-card-item">
+        <div class="pci-icon" style="background:#00d2d3">RG</div>
+        <div>
+          <div class="pci-name">ResearchGate</div>
+          <div class="pci-id">Devendra-Dandotiya</div>
+          <div class="pci-meta">Social Academic Network</div>
+        </div>
+      </a>
+      <a href="https://in.linkedin.com/in/drdevendradandotiya" target="_blank" class="profile-card-item">
+        <div class="pci-icon" style="background:#0077b5">in</div>
+        <div>
+          <div class="pci-name">LinkedIn</div>
+          <div class="pci-id">drdevendradandotiya</div>
+          <div class="pci-meta">Professional Network</div>
+        </div>
+      </a>
+      <a href="https://vidwan.inflibnet.ac.in/profile/208780" target="_blank" class="profile-card-item">
+        <div class="pci-icon" style="background:#2e7d32">VI</div>
+        <div>
+          <div class="pci-name">Vidwan – INFLIBNET</div>
+          <div class="pci-id">Profile ID: 208780</div>
+          <div class="pci-meta">Indian Academic Network</div>
+        </div>
+      </a>
+      <a href="https://presidencyuniversity.in/faculty-staff/devendra-singh-dandotiya" target="_blank" class="profile-card-item">
+        <div class="pci-icon" style="background:#8b1a1a">PU</div>
+        <div>
+          <div class="pci-name">Presidency University</div>
+          <div class="pci-id">Official Faculty Profile</div>
+          <div class="pci-meta">Dept. of Mechanical Engineering</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FUNDED RESEARCH ─────────────────────────────── -->
+  <section id="research" class="reveal">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Funded Projects</div>
+        <h2 class="section-title">Research Funding</h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="proj-card">
+        <div class="proj-amount">₹18.3 L</div>
+        <div class="proj-title">Thermo Electric Cooler Integrated Nano-PCM Based Portable Milk Device for Rural Use</div>
+        <div class="proj-agency">🏛 SERB, DST — Govt. of India</div>
+        <div class="proj-meta">
+          <span class="proj-period">Jan 2024 – Jan 2027</span>
+          <span class="proj-badge ongoing">● Ongoing · PI</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-amount">₹0.5 L</div>
+        <div class="proj-title">Experimental & Numerical Study on Battery Thermal Management System Using PCM</div>
+        <div class="proj-agency">🏛 SEED Grant, Presidency University</div>
+        <div class="proj-meta">
+          <span class="proj-period">Apr 2022 – Mar 2023</span>
+          <span class="proj-badge done">✔ Completed · PI</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-amount">₹6.0 L</div>
+        <div class="proj-title">Setting up of Advanced Technology Research Center (ATRC)</div>
+        <div class="proj-agency">🏛 SEED Grant, Presidency University</div>
+        <div class="proj-meta">
+          <span class="proj-period">Apr 2021 – Mar 2022</span>
+          <span class="proj-badge done">✔ Completed · PI</span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:1.5rem;text-align:right">
+      <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--ink)">Total PI Funding: <span style="color:var(--gold)">₹24.8 Lakhs</span></div>
+    </div>
+  </section>
+
+  <!-- ── PUBLICATIONS ─────────────────────────────────── -->
+  <section id="publications" class="reveal">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Research Output</div>
+        <h2 class="section-title">Publications</h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="metrics-strip">
+      <div class="metric-item"><div class="metric-num">21+</div><div class="metric-lbl">SCIE/Scopus Journals</div></div>
+      <div class="metric-item"><div class="metric-num">28</div><div class="metric-lbl">Conference Papers</div></div>
+      <div class="metric-item"><div class="metric-num">2</div><div class="metric-lbl">Springer Book Chapters</div></div>
+      <div class="metric-item"><div class="metric-num">11</div><div class="metric-lbl">h-Index (GS)</div></div>
+      <div class="metric-item"><div class="metric-num">428+</div><div class="metric-lbl">Total Citations</div></div>
+      <div class="metric-item"><div class="metric-num">3</div><div class="metric-lbl">Patents Granted</div></div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tab-bar">
+      <div class="tab active" onclick="switchTab(this,'tab-journals')">📔 Journals</div>
+      <div class="tab" onclick="switchTab(this,'tab-patents')">🔬 Patents</div>
+      <div class="tab" onclick="switchTab(this,'tab-conf')">🎤 Conferences</div>
+      <div class="tab" onclick="switchTab(this,'tab-books')">📚 Book Chapters</div>
+    </div>
+
+    <!-- JOURNALS TAB -->
+    <div id="tab-journals" class="tab-content active">
+      <div class="pub-filter">
+        <button class="pfbtn active" onclick="filterPubs(this,'all')">All</button>
+        <button class="pfbtn" onclick="filterPubs(this,'q1')">Q1</button>
+        <button class="pfbtn" onclick="filterPubs(this,'q2')">Q2</button>
+        <button class="pfbtn" onclick="filterPubs(this,'scie')">SCIE</button>
+        <button class="pfbtn" onclick="filterPubs(this,'scopus')">Scopus</button>
+        <button class="pfbtn" onclick="filterPubs(this,'2025')">2025</button>
+        <button class="pfbtn" onclick="filterPubs(this,'2024')">2024</button>
+      </div>
+      <div id="pub-list">
+        <!-- 2025 -->
+        <div class="pub-year-group">
+          <div class="pub-year-badge">2025</div>
+          <div class="pub-item" data-tags="q2 scie 2025 asme">
+            <div class="pub-title">Design and Performance Evaluation of a Shell and Tube EGR Cooler Using Kern Method with Experimental Validation on a Diesel Engine</div>
+            <div class="pub-meta">G.R. Chethan, M.S.G. Gowda, <strong>D. Dandotiya</strong> — <em>J. Therm. Sci. Eng. Appl.</em> (2025) | DOI: 10.1115/1.4070729</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q2">Q2</span><span class="qtag" style="background:#e0f2fe;color:#0369a1">ASME</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 scie 2025 springer">
+            <div class="pub-title">Absorption Performance of Al₂O₃ and ZnO Nanofluids for CO₂ Capture: Experimental Study</div>
+            <div class="pub-meta">B. Devakki, <strong>D. Dandotiya</strong> — <em>Sādhanā</em> 50 (2025) 331 | DOI: 10.1007/s12046-025-02998-2</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#f3e8ff;color:#7e22ce">Springer Nature</span></div>
+          </div>
+          <div class="pub-item" data-tags="q2 scie 2025 springer">
+            <div class="pub-title">State of Health Estimation for Lithium-Ion Batteries Using Hybrid Gaussian-Laplacian ELM</div>
+            <div class="pub-meta">P. Kakati, <strong>D. Dandotiya</strong>, R.R. Singh — <em>Ionics</em> 31 (2025) 5765–5791 | DOI: 10.1007/s11581-025-06288-z</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q2">Q2</span><span class="qtag" style="background:#f3e8ff;color:#7e22ce">Springer Nature</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 scie 2025 elsevier">
+            <div class="pub-title">Estimating Battery State of Health Using DConvBLSTM and Modified Particle Filter under Complex Noise</div>
+            <div class="pub-meta">P. Kakati, <strong>D. Dandotiya</strong>, R.R. Singh — <em>J. Energy Storage</em> 108 (2025) 115036 | DOI: 10.1016/J.EST.2024.115036</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#fee2e2;color:#b91c1c">Elsevier</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 scopus 2025">
+            <div class="pub-title">Sustainable MWCNT and TiO₂ Nanofluids for CO₂ Absorption and Their Stability: An Experimental Study</div>
+            <div class="pub-meta">B. Devakki, <strong>D. Dandotiya</strong> — <em>Applied Science and Engineering Progress</em> (2025) | DOI: 10.14416/j.asep.2025.10.007</div>
+            <div class="pub-tags"><span class="qtag scopus">Scopus</span><span class="qtag q1">Q1</span></div>
+          </div>
+          <div class="pub-item" data-tags="q4 scopus 2025">
+            <div class="pub-title">Experimental Study of CO₂ Absorption Capacity Enhancement of Fe₂O₃ and SiO₂ Nanofluids</div>
+            <div class="pub-meta">B. Devakki, <strong>D. Dandotiya</strong> — <em>J. Mines, Metals and Fuels</em> (2025) 2451–2465 | DOI: 10.18311/jmmf/2025/48301</div>
+            <div class="pub-tags"><span class="qtag scopus">Scopus</span><span class="qtag q4">Q4</span></div>
+          </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="pub-year-group">
+          <div class="pub-year-badge">2024</div>
+          <div class="pub-item" data-tags="q1 esci 2024 springer">
+            <div class="pub-title">Automatic Detection of Hate Speech in Code-Mixed Indian Languages Using DConvBLSTM-MuRIL Ensemble</div>
+            <div class="pub-meta">P. Kakati, <strong>D. Dandotiya</strong> — <em>Social Network Analysis and Mining</em> 14 (2024) 108 | DOI: 10.1007/S13278-024-01264-3</div>
+            <div class="pub-tags"><span class="qtag esci">ESCI</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#f3e8ff;color:#7e22ce">Springer Nature</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 scie 2024">
+            <div class="pub-title">Numerical Investigation of Heat Transfer in Wire and Tube-Based Phase Change Material Heat Exchanger</div>
+            <div class="pub-meta"><strong>D. Dandotiya</strong>, N.D. Banker, A. Jaiswal, N.G. Patil — <em>Int. J. Mod. Phys. C</em> 35 (2024) | DOI: 10.1142/S0129183124501274</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#fef9c3;color:#854d0e">World Scientific</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 scie 2024 pick">
+            <div class="pub-title">Computational Analysis of Preheating Cylindrical Lithium-Ion Batteries with Fin-Assisted Phase Change Material</div>
+            <div class="pub-meta">A.K. Joshi, P. Kakati, <strong>D. Dandotiya</strong> et al. — <em>Int. J. Mod. Phys. C</em> 35 (2024) | DOI: 10.1142/S0129183124500475</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q1">Q1</span><span class="qtag pick">⭐ Editor's Pick</span></div>
+          </div>
+        </div>
+
+        <!-- 2021-2023 -->
+        <div class="pub-year-group">
+          <div class="pub-year-badge">2021 – 2023</div>
+          <div class="pub-item" data-tags="q4 scopus">
+            <div class="pub-title">Copper and CNT Nanoparticles in PCM for Enhanced Thermal Management in Batteries</div>
+            <div class="pub-meta"><strong>D. Dandotiya</strong>, A.K. Joshi et al. — <em>J. Mines, Metals and Fuels</em> 71 (2023) | DOI: 10.18311/JMMF/2023/35045</div>
+            <div class="pub-tags"><span class="qtag scopus">Scopus</span><span class="qtag q4">Q4</span></div>
+          </div>
+          <div class="pub-item" data-tags="q2 esci">
+            <div class="pub-title">Thermal Performance Assessment of PCM for Electronic Cooling: An Experimental Investigation</div>
+            <div class="pub-meta">P.S. Pandiyan, <strong>D. Dandotiya</strong> et al. — <em>Energy Storage</em> 5 (2023) e402 | DOI: 10.1002/est2.402</div>
+            <div class="pub-tags"><span class="qtag esci">ESCI</span><span class="qtag q2">Q2</span><span class="qtag" style="background:#dbeafe;color:#1e40af">Wiley</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 esci elsevier">
+            <div class="pub-title">A Comprehensive Review on Cooling Techniques to Decrease Operating Temperature of Solar PV Panels</div>
+            <div class="pub-meta">M.S. Sheik, P. Kakati, <strong>D. Dandotiya</strong> et al. — <em>Energy Nexus</em> 8 (2022) | DOI: 10.1016/j.nexus.2022.100161</div>
+            <div class="pub-tags"><span class="qtag esci">ESCI</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#fee2e2;color:#b91c1c">Elsevier</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 scie springer">
+            <div class="pub-title">Experimental Investigation of MPFI Gasoline Engine Fuelled with Ethanol and n-Butanol</div>
+            <div class="pub-meta">P. Nimje, <strong>D. Dandotiya</strong>, N.D. Banker — <em>Int. J. Environ. Sci. Technol.</em> 19 (2021) 1165–1174 | DOI: 10.1007/S13762-021-03242-0</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#f3e8ff;color:#7e22ce">Springer Nature</span></div>
+          </div>
+          <div class="pub-item" data-tags="q2 scie asme">
+            <div class="pub-title">Performance Investigation of a Vapor Adsorption Refrigeration System Based on Adsorption/Desorption Time</div>
+            <div class="pub-meta">M. Pendurthi, <strong>D. Dandotiya</strong>, N.D. Banker et al. — <em>J. Therm. Sci. Eng. Appl.</em> 13 (2021) | DOI: 10.1115/1.4050230</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q2">Q2</span><span class="qtag" style="background:#e0f2fe;color:#0369a1">ASME</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 scie asme">
+            <div class="pub-title">Energy Efficiency Improvement of a Refrigerator Integrated with Phase Change Material-Based Condenser</div>
+            <div class="pub-meta"><strong>D. Dandotiya</strong>, N.D. Banker — <em>J. Energy Resour. Technol. (ASME)</em> 143 (2021) | DOI: 10.1115/1.4048871</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#e0f2fe;color:#0369a1">ASME</span></div>
+          </div>
+        </div>
+
+        <!-- 2017-2020 -->
+        <div class="pub-year-group">
+          <div class="pub-year-badge">2017 – 2020</div>
+          <div class="pub-item" data-tags="q1 scie springer">
+            <div class="pub-title">Evaluation of Minimum, Maximum and Optimum Source Temperature for Solar-Powered Adsorption Refrigeration System</div>
+            <div class="pub-meta">N.D. Banker, <strong>D. Dandotiya</strong> et al. — <em>Arabian J. Sci. Eng.</em> 45 (2020) 9735–9745 | DOI: 10.1007/S13369-020-04865-0</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#f3e8ff;color:#7e22ce">Springer Nature</span></div>
+          </div>
+          <div class="pub-item" data-tags="q2 scopus asme">
+            <div class="pub-title">Theoretical Study of Energy Saving Through Redesign of Water Distribution Arrangement in a Medium-Rise Residential Building</div>
+            <div class="pub-meta"><strong>D. Dandotiya</strong>, N.D. Banker — <em>J. Eng. Sustain. Build. Cities</em> 1 (2020) | DOI: 10.1115/1.4047618</div>
+            <div class="pub-tags"><span class="qtag scopus">Scopus</span><span class="qtag q2">Q2</span><span class="qtag" style="background:#e0f2fe;color:#0369a1">ASME</span></div>
+          </div>
+          <div class="pub-item" data-tags="q3 esci">
+            <div class="pub-title">Performance Enhancement of a Refrigerator Using Phase Change Material-Based Condenser: An Experimental Investigation</div>
+            <div class="pub-meta"><strong>D. Dandotiya</strong>, N.D. Banker — <em>Int. J. Air-Cond. Refrig.</em> 25 (2017) 1750032 | DOI: 10.1142/S2010132517500328</div>
+            <div class="pub-tags"><span class="qtag esci">ESCI</span><span class="qtag q3">Q3</span></div>
+          </div>
+          <div class="pub-item" data-tags="q1 scie">
+            <div class="pub-title">Numerical Investigation of Heat Transfer Enhancement in a Multitube TES Heat Exchanger Using Fins</div>
+            <div class="pub-meta"><strong>D. Dandotiya</strong>, N.D. Banker — <em>Numer. Heat Transf. A Appl.</em> 72 (2017) 389–400 | DOI: 10.1080/10407782.2017.1376976</div>
+            <div class="pub-tags"><span class="qtag scie">SCIE</span><span class="qtag q1">Q1</span><span class="qtag" style="background:#fce7f3;color:#9d174d">Taylor & Francis</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:1.5rem">
+        <a href="https://scholar.google.com/citations?user=N3PKfr4AAAAJ" target="_blank" class="btn btn-gold">View Full List on Google Scholar →</a>
+      </div>
+    </div>
+
+    <!-- PATENTS TAB -->
+    <div id="tab-patents" class="tab-content">
+      <div class="patents-list">
+        <div class="patent-card">
+          <div class="patent-num">01</div>
+          <div>
+            <div class="patent-title">A Hybrid Battery Thermal Management System</div>
+            <div class="patent-meta">Patent No.: <strong>542165</strong> · Grant Date: June 19, 2024 · App. No.: 202341003561 · Filed: Jan 18, 2023<br>Inventors: <strong>Dr. D.S. Dandotiya</strong>, Pallabi Kakati, Anand Joshi</div>
+          </div>
+          <div><span class="patent-badge granted">✔ Granted</span></div>
+        </div>
+        <div class="patent-card">
+          <div class="patent-num">02</div>
+          <div>
+            <div class="patent-title">An Energy Efficient Air Conditioning System and Method Thereof</div>
+            <div class="patent-meta">Patent No.: <strong>502589</strong> · Grant Date: Jan 23, 2024 · App. No.: 201811041530 · Filed: Nov 2, 2018<br>Inventors: Dr. Nitin D. Banker, <strong>Dr. D.S. Dandotiya</strong></div>
+          </div>
+          <div><span class="patent-badge granted">✔ Granted</span></div>
+        </div>
+        <div class="patent-card">
+          <div class="patent-num">03</div>
+          <div>
+            <div class="patent-title">An Improved Gas Turbine Power Plant</div>
+            <div class="patent-meta">Patent No.: <strong>471057</strong> · Grant Date: Nov 21, 2023 · App. No.: 201811042871 · Filed: Nov 14, 2018<br>Inventors: Dr. Nitin D. Banker, <strong>Dr. D.S. Dandotiya</strong></div>
+          </div>
+          <div><span class="patent-badge granted">✔ Granted</span></div>
+        </div>
+        <div class="patent-card">
+          <div class="patent-num">04</div>
+          <div>
+            <div class="patent-title">A Portable Milk Storage Container for Rural Applications</div>
+            <div class="patent-meta">App. No.: <strong>202541064016A</strong> · Filed & Published: July 04, 2025<br>Inventors: <strong>Dr. D.S. Dandotiya</strong>, Pallabi Kakati, Dr. K.N. Prabhu</div>
+          </div>
+          <div><span class="patent-badge published">📋 Published</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONFERENCES TAB -->
+    <div id="tab-conf" class="tab-content">
+      <div style="color:var(--muted);font-size:0.85rem;margin-bottom:1rem">28 conference papers presented at ASME, SAE, IIT Madras, NIT Calicut, IIT Guwahati, and international venues</div>
+      <div class="pub-year-group">
+        <div class="pub-year-badge">2025</div>
+        <div class="pub-item"><div class="pub-title">Prediction of CO₂ Absorption Capacity of ZnO and SiO₂ Nanofluids by ANN</div><div class="pub-meta">B. Devakki, <strong>D. Dandotiya</strong> — ASME IMECE, Hyderabad, Sep 10–13, 2025</div></div>
+        <div class="pub-item"><div class="pub-title">Performance Evaluation of a 3 kWp Grid-Connected CIGS PV System</div><div class="pub-meta">Sheik, <strong>D. Dandotiya</strong>, Udaya — ECM 2025, IIT Guwahati, Jun 13–14, 2025</div></div>
+        <div class="pub-item"><div class="pub-title">Numerical Investigation of Heat-sink Performance Employing PCM/NePCM under Varied Heat Flux</div><div class="pub-meta">Prashant S.P., <strong>D. Dandotiya</strong>, Ramesh C.S. — ICAFD, Saptagiri NPS University, Mar 21–22, 2025</div></div>
+        <div class="pub-item"><div class="pub-title">Sustainable MWCNT and TiO₂ Nanofluids for CO₂ Absorption — Stability Study</div><div class="pub-meta">B. Devakki, <strong>D. Dandotiya</strong> — STEM-25, Bangkok, Thailand, Feb 19–21, 2025</div></div>
+        <div class="pub-item"><div class="pub-title">Design and Development of Very Low Temperature Refrigeration Using Cascade System</div><div class="pub-meta"><strong>D. Dandotiya</strong>, N.D. Banker, G. Ponniah — 2nd Global Conf. Decarbonizing India, NIT Calicut, Mar 6–8, 2025</div></div>
+      </div>
+      <div class="pub-year-group">
+        <div class="pub-year-badge">2024</div>
+        <div class="pub-item"><div class="pub-title">Numerical Analysis of Pouch Cell Battery Thermal Management Using U-Type Liquid Cooling Channels</div><div class="pub-meta">M. Sufyan, <strong>D. Dandotiya</strong>, N.D. Banker — ICFTES, NIT Calicut, Jun 6–8, 2024</div></div>
+        <div class="pub-item"><div class="pub-title">Investigating PCM Nanocomposites with Al₂O₃: Synthesis and Characterization</div><div class="pub-meta">A.K. Joshi, <strong>D. Dandotiya</strong>, Prashanth — IAES-2024, ISHMT-RCT & LPSC-ISRO</div></div>
+        <div class="pub-item"><div class="pub-title">Modelling and Simulation of Cooling of Heat Sink Using Alumina Nano Reinforced PCM</div><div class="pub-meta">Pandiyan, Prashanth, <strong>D. Dandotiya</strong> — SAE Technical Paper 2024-01-1913</div></div>
+      </div>
+      <div style="text-align:center;color:var(--muted);font-size:0.85rem;margin-top:1rem">+ 20 more papers at ASME GT India (2015–2023), IOP Conf., India Finance Conference, SAE, and ISME. Full list on Google Scholar.</div>
+    </div>
+
+    <!-- BOOK CHAPTERS TAB -->
+    <div id="tab-books" class="tab-content">
+      <div class="pub-item" style="border-left-color:var(--gold)">
+        <div class="pub-title">Estimating Lithium-Ion Battery Health Parameters Using Deep Learning Techniques</div>
+        <div class="pub-meta">P. Kakati, <strong>D. Dandotiya</strong>, A.K. Joshi, R.R. Singh, Ramesh C.S. — <em>Recent Advances in Thermal Engineering</em>, Springer | eISBN: 978-981-97-3648-5</div>
+        <div class="pub-tags"><span class="qtag" style="background:#f3e8ff;color:#7e22ce">Springer</span></div>
+      </div>
+      <div class="pub-item" style="border-left-color:var(--gold)">
+        <div class="pub-title">3D Printed Personalized Orthotic Inserts Using Photogrammetry and FDM Technology</div>
+        <div class="pub-meta">T. Ravi, R. Ranganathan, S.P. Ramesh, <strong>D. Dandotiya</strong> — <em>Fused Deposition Modeling Based 3D Printing</em>, Springer | eISBN: 978-3-030-68024-4 | DOI: 10.1007/978-3-030-68024-4_18</div>
+        <div class="pub-tags"><span class="qtag" style="background:#f3e8ff;color:#7e22ce">Springer</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PhD SUPERVISION ────────────────────────────────── -->
+  <section id="supervision" class="reveal">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Mentoring</div>
+        <h2 class="section-title">PhD Supervision</h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+    <div style="display:flex;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap">
+      <div style="background:var(--ink);color:#fff;border-radius:12px;padding:1rem 2rem;text-align:center">
+        <div style="font-family:'DM Serif Display',serif;font-size:2.5rem;color:var(--gold)">3</div>
+        <div style="font-size:0.75rem;opacity:0.6;text-transform:uppercase;letter-spacing:0.8px">PhDs Completed</div>
+      </div>
+      <div style="background:var(--blue);color:#fff;border-radius:12px;padding:1rem 2rem;text-align:center">
+        <div style="font-family:'DM Serif Display',serif;font-size:2.5rem;color:#fff">3</div>
+        <div style="font-size:0.75rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.8px">PhDs Ongoing</div>
+      </div>
+      <div style="background:var(--teal);color:#fff;border-radius:12px;padding:1rem 2rem;text-align:center">
+        <div style="font-family:'DM Serif Display',serif;font-size:2.5rem;color:#fff">8</div>
+        <div style="font-size:0.75rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.8px">M.Tech Guided</div>
+      </div>
+      <div style="background:#6d4c41;color:#fff;border-radius:12px;padding:1rem 2rem;text-align:center">
+        <div style="font-family:'DM Serif Display',serif;font-size:2.5rem;color:#fff">9</div>
+        <div style="font-size:0.75rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.8px">B.Tech Projects</div>
+      </div>
+      <div style="background:#37474f;color:#fff;border-radius:12px;padding:1rem 2rem;text-align:center">
+        <div style="font-family:'DM Serif Display',serif;font-size:2.5rem;color:#fff">2</div>
+        <div style="font-size:0.75rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.8px">Intl. Interns (France)</div>
+      </div>
+    </div>
+    <div class="sup-grid">
+      <div class="sup-card">
+        <div class="sup-name">Prashanth S. P.</div>
+        <div class="sup-period">Jan 2019 – Sept 2023</div>
+        <div class="sup-title">Numerical & Experimental Investigation on PCM Based Heat Sinks for Enhanced Electronic Cooling</div>
+        <span class="sup-status done">✔ Completed</span>
+      </div>
+      <div class="sup-card">
+        <div class="sup-name">Anand K. Joshi</div>
+        <div class="sup-period">Jan 2021 – Feb 2024</div>
+        <div class="sup-title">Nano-Enhanced Phase Change Material for Improved Thermal Management in Lithium Ion Battery</div>
+        <span class="sup-status done">✔ Completed</span>
+      </div>
+      <div class="sup-card">
+        <div class="sup-name">Basavaraj Devakki</div>
+        <div class="sup-period">Sept 2021 – May 2025</div>
+        <div class="sup-title">Enhancing CO₂ Absorption Using Nanofluids: A Combined Experimental and Machine Learning Approach</div>
+        <span class="sup-status done">✔ Completed</span>
+      </div>
+      <div class="sup-card" style="border-color:var(--blue)">
+        <div class="sup-name">Mohammed Shoaib Sheik</div>
+        <div class="sup-period">July 2019 – Present</div>
+        <div class="sup-title">Thermal Management of Solar PV Panels</div>
+        <span class="sup-status ongoing">● Ongoing</span>
+      </div>
+      <div class="sup-card" style="border-color:var(--blue)">
+        <div class="sup-name">Muralidhar B.</div>
+        <div class="sup-period">Jan 2019 – Present</div>
+        <div class="sup-title">Optimization of Grinding Capability of Brazed Monolayer CBN Grinding Wheel</div>
+        <span class="sup-status ongoing">● Ongoing</span>
+      </div>
+      <div class="sup-card" style="border-color:var(--blue)">
+        <div class="sup-name">Neeraj Prakash Mahato</div>
+        <div class="sup-period">Aug 2024 – Present</div>
+        <div class="sup-title">Design and Development of Milk Storage Unit for Rural Area</div>
+        <span class="sup-status ongoing">● Ongoing</span>
+      </div>
+    </div>
+    <p style="margin-top:1rem;font-size:0.82rem;color:var(--muted)">B.Tech projects include collaborations with ISRO (U.R. Rao Satellite Centre) and DRDO (Gas Turbine Research Establishment, Bengaluru).</p>
+  </section>
+
+  <!-- ── EXPERIENCE ─────────────────────────────────────── -->
+  <section id="experience" class="reveal">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Career</div>
+        <h2 class="section-title">Experience & Education</h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start">
+      <div class="card card-pad">
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.2rem;color:var(--ink);margin-bottom:1.5rem">Professional Experience</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">Feb 2025 – Present</div>
+            <div class="tl-role">Associate Professor (Research)</div>
+            <div class="tl-org">Presidency University, Bengaluru</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot blue"></div>
+            <div class="tl-period">Jun 2021 – Aug 2024</div>
+            <div class="tl-role">Research Coordinator</div>
+            <div class="tl-org">Dept. of Mechanical Engineering, Presidency University</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot blue"></div>
+            <div class="tl-period">Jan 2022 – Jan 2025</div>
+            <div class="tl-role">Assistant Professor (Selection Grade)</div>
+            <div class="tl-org">Presidency University, Bengaluru</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot blue"></div>
+            <div class="tl-period">Jun 2018 – Dec 2021</div>
+            <div class="tl-role">Assistant Professor</div>
+            <div class="tl-org">Presidency University, Bengaluru</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot teal"></div>
+            <div class="tl-period">Jan 2014 – Dec 2018</div>
+            <div class="tl-role">Research Associate</div>
+            <div class="tl-org">Shiv Nadar Institution of Eminence, UP</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot teal"></div>
+            <div class="tl-period">Oct 2009 – Dec 2013</div>
+            <div class="tl-role">Assistant Professor</div>
+            <div class="tl-org">SRCEM Gwalior, Dept. of Mechanical Engineering</div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-pad">
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.2rem;color:var(--ink);margin-bottom:1.5rem">Education</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">Jan 2014 – July 2018</div>
+            <div class="tl-role">Ph.D. — Mechanical Engineering</div>
+            <div class="tl-org">Shiv Nadar Institution of Eminence, Delhi NCR · Research Fellowship ₹5.45L/year</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot blue"></div>
+            <div class="tl-period">Aug 2007 – July 2009</div>
+            <div class="tl-role">M.Tech — Fluid & Thermal Science</div>
+            <div class="tl-org">IIT Guwahati · GATE Scholarship (Ministry of HRD)</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot teal"></div>
+            <div class="tl-period">Aug 2002 – July 2006</div>
+            <div class="tl-role">B.E. — Mechanical Engineering</div>
+            <div class="tl-org">Govt. Engineering College, Bilaspur (Guru Ghasidas University)</div>
+          </div>
+        </div>
+        <hr style="border:none;border-top:1px solid var(--border);margin:1.5rem 0">
+        <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--ink);margin-bottom:1rem">Professional Memberships</h3>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="font-size:0.85rem;color:var(--text)">🔧 <strong>ASME</strong> — Member No. 102138536</div>
+          <div style="font-size:0.85rem;color:var(--text)">🌡 <strong>ISHMT</strong> — Life Member ID: 1682</div>
+          <div style="font-size:0.85rem;color:var(--text)">🔬 <strong>IAENG</strong> — Member No. 129199</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AWARDS ─────────────────────────────────────────── -->
+  <section id="awards" class="reveal">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Recognition</div>
+        <h2 class="section-title">Awards & Achievements</h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+    <div class="awards-list">
+      <div class="award-item"><div class="award-icon">🏆</div><div class="award-text">Secured <strong>₹2.00 Lakhs</strong> in Hackathon on Coal Gasification — CMPDI Ranchi, Ministry of Coal, Govt. of India</div></div>
+      <div class="award-item"><div class="award-icon">🎓</div><div class="award-text"><strong>Research Fellowship ₹5.45 Lakhs per annum</strong> for Ph.D. at Shiv Nadar Institution of Eminence (Jan 2014–Dec 2017)</div></div>
+      <div class="award-item"><div class="award-icon">📜</div><div class="award-text"><strong>GATE Scholarship</strong> (Postgraduate), Ministry of HRD, India — IIT Guwahati (Aug 2007–July 2009)</div></div>
+      <div class="award-item"><div class="award-icon">⭐</div><div class="award-text"><strong>Outstanding Contribution in Reviewing</strong> — International Journal of Refrigeration, Elsevier (August 2018)</div></div>
+      <div class="award-item"><div class="award-icon">🎤</div><div class="award-text">Session Co-Organizer — <strong>ASME GT India 2019 Conference, IIT Madras</strong> (December 5–6, 2019)</div></div>
+      <div class="award-item"><div class="award-icon">📢</div><div class="award-text">Convener — <strong>National Symposium on Energy Management and Sustainability (NSEMAS 2024)</strong>, Presidency University, April 27, 2024</div></div>
+      <div class="award-item"><div class="award-icon">🔬</div><div class="award-text">Session Coordinator — ICOFTIME2020, Presidency University Bengaluru (in association with UCSI University, Malaysia)</div></div>
+    </div>
+    <hr style="border:none;border-top:1px solid var(--border);margin:2rem 0">
+    <h3 style="font-family:'DM Serif Display',serif;color:var(--ink);margin-bottom:1.2rem">Journal Reviewer (15+ Journals)</h3>
+    <div class="reviewer-grid">
+      <div class="rev-card"><div class="rev-pub">ASME</div><div class="rev-journals">J. Eng. Sustain. Buildings; J. Solar Energy Engg.</div></div>
+      <div class="rev-card"><div class="rev-pub">Elsevier</div><div class="rev-journals">Int. J. Refrigeration; Applied Energy; Energy Conv. & Mgmt.; ENERGY and AI; Thermofluids; Reliability Engg.</div></div>
+      <div class="rev-card"><div class="rev-pub">Taylor & Francis</div><div class="rev-journals">Int. J. Ambient Energy</div></div>
+      <div class="rev-card"><div class="rev-pub">Nature Portfolio</div><div class="rev-journals">Scientific Reports</div></div>
+      <div class="rev-card"><div class="rev-pub">Oxford Univ. Press</div><div class="rev-journals">Int. J. Low-Carbon Technologies</div></div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────────────── -->
+  <section id="contact" class="reveal">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="ci-icon">📧</div>
+        <div>
+          <div class="ci-lbl">Email</div>
+          <div class="ci-val"><a href="mailto:devendradandotiya@presidencyuniversity.in">devendradandotiya@presidencyuniversity.in</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon">📞</div>
+        <div>
+          <div class="ci-lbl">Mobile</div>
+          <div class="ci-val">+91-995 871 1659</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon">📍</div>
+        <div>
+          <div class="ci-lbl">Address</div>
+          <div class="ci-val">Dept. of Mechanical Engineering, Presidency University, Bengaluru – 560064, Karnataka, India</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon">🌐</div>
+        <div>
+          <div class="ci-lbl">University Profile</div>
+          <div class="ci-val"><a href="https://presidencyuniversity.in/faculty-staff/devendra-singh-dandotiya" target="_blank">View Faculty Page ↗</a></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+      <a href="mailto:devendradandotiya@presidencyuniversity.in" class="btn btn-gold">✉ Send Email</a>
+      <a href="https://scholar.google.com/citations?user=N3PKfr4AAAAJ" target="_blank" class="btn btn-outline" style="background:var(--ink);color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.1)">📊 Google Scholar</a>
+      <a href="https://orcid.org/0000-0002-6917-6165" target="_blank" class="btn btn-outline" style="background:var(--ink);color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.1)">🔬 ORCID</a>
+    </div>
+  </section>
+</main>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+<footer>
+  <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;margin-bottom:0.5rem;color:rgba(255,255,255,0.8)">
+    <strong>Dr. Devendra Singh Dandotiya</strong>
+  </div>
+  <div>Associate Professor (Research) · Dept. of Mechanical Engineering · Presidency University, Bengaluru</div>
+  <div style="margin-top:0.5rem;opacity:0.4;font-size:0.75rem">
+    Google Scholar: N3PKfr4AAAAJ · ORCID: 0000-0002-6917-6165 · Scopus: 57195904646 · ResearcherID: G-2729-2018
+  </div>
+  <div style="margin-top:1rem;opacity:0.35;font-size:0.72rem">© 2026 · Last updated March 2026 · To modify content, edit the data in the script below</div>
+</footer>
+
+<div id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<script>
+// ── PARTICLES ──────────────────────────────────────────
+(function(){
+  const c = document.getElementById('particles');
+  for(let i=0;i<20;i++){
+    const p = document.createElement('div');
+    p.className='p';
+    const s = Math.random()*4+2;
+    p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;animation-duration:${Math.random()*20+15}s;animation-delay:${Math.random()*-20}s;opacity:${Math.random()*0.2+0.05}`;
+    c.appendChild(p);
+  }
+})();
+
+// ── SCROLL REVEAL ─────────────────────────────────────
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in')}});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// ── BACK TO TOP ───────────────────────────────────────
+const btt = document.getElementById('btt');
+window.addEventListener('scroll',()=>{
+  btt.classList.toggle('visible', window.scrollY > 400);
+});
+
+// ── TABS ──────────────────────────────────────────────
+function switchTab(btn, id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+
+// ── PUB FILTER ────────────────────────────────────────
+function filterPubs(btn, filter){
+  document.querySelectorAll('.pfbtn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#pub-list .pub-item').forEach(item=>{
+    const tags = item.dataset.tags || '';
+    if(filter==='all' || tags.includes(filter)){
+      item.style.display='';
+    } else {
+      item.style.display='none';
+    }
+  });
+  // hide/show year groups that are empty
+  document.querySelectorAll('.pub-year-group').forEach(g=>{
+    const visible = [...g.querySelectorAll('.pub-item')].some(i=>i.style.display!=='none');
+    g.style.display = visible ? '' : 'none';
+  });
+}
+
+// ── COUNTER ANIMATION ─────────────────────────────────
+function animateCounters(){
+  document.querySelectorAll('.stat-num,.metric-num').forEach(el=>{
+    const text = el.textContent;
+    const num = parseFloat(text.replace(/[^0-9.]/g,''));
+    if(!num) return;
+    const prefix = text.match(/[₹]/)?.[0] || '';
+    const suffix = text.match(/[+L]/)?.[0] || '';
+    let current = 0; const steps = 40;
+    const inc = num/steps;
+    const t = setInterval(()=>{
+      current = Math.min(current+inc, num);
+      el.textContent = prefix + (Number.isInteger(num)?Math.round(current):current.toFixed(1)) + suffix;
+      if(current>=num) clearInterval(t);
+    }, 40);
+  });
+}
+const heroObs = new IntersectionObserver(entries=>{
+  if(entries[0].isIntersecting){animateCounters();heroObs.disconnect();}
+},{threshold:0.3});
+heroObs.observe(document.querySelector('.hero-stats'));
+</script>
+</body>
+</html>
